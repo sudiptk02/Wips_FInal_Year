@@ -43,6 +43,7 @@ sudo apt install snort python3
 
 
 3️⃣ Run the system
+Cd btech_project\Final_Y_Project\testing
 python3 main.py 
 
 
