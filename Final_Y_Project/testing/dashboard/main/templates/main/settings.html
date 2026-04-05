@@ -1,0 +1,39 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+<div class="row">
+    <!-- Manage Items Section -->
+    <div class="col-md-6">
+        <h2>Manage Items</h2>
+        <form method="post" class="mt-4">
+            {% csrf_token %}
+            <table class="table table-bordered table-striped">
+                <thead class="table-light">
+                    <tr>
+                        <th>IPS</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in items %}
+                    <tr>
+                        <td>{{ item.0 }}</td>
+                        <td>
+                            <button type="submit" name="toggle" value="{{ item.0 }}"
+                                    class="btn {% if item.1 %}btn-success{% else %}btn-danger{% endif %}">
+                                {% if item.1 %}
+                                    Enabled
+                                {% else %}
+                                    Disabled
+                                {% endif %}
+                            </button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+</div>
+{% endblock %}

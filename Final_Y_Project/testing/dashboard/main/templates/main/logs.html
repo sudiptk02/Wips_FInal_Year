@@ -1,0 +1,72 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+<h2>Select Attack Type</h2>
+<form method="get">
+    <label for="attack_type">Attack Type:</label>
+    <select id="attack_type" name="attack_type" onchange="this.form.submit()">
+        {% for attack in attack_types %}
+        <option value="{{ attack }}" {% if attack == selected_attack %}selected{% endif %}>
+            {{ attack }}
+        </option>
+        {% endfor %}
+    </select>
+</form>
+
+<h3>Logs for {{ selected_attack }}</h3>
+
+{% if logs %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            {% if selected_attack == 'deauth' %}
+                <th>Timestamp</th>
+                <th>Router</th>
+                <th>Victim</th>
+                <th>Signal Strength</th>
+                <th>Channel Flags</th>
+                <th>Packet Length</th>
+                <th>Type</th>
+            {% elif selected_attack == 'rogue_ap' %}
+                <th>Timestamp</th>
+                <th>SSID</th>
+                <th>BSSID</th>
+                <th>Signal Strength</th>
+                <th>Channel</th>
+                <th>Supported Rates</th>
+            {% else %}
+                <th>Timestamp</th>
+                <th>Attack Id</th>
+                <th>Source IP</th>
+                <th>Destination IP</th>
+                <th>Severity</th>
+            {% endif %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for log in logs %}
+        <tr>
+            {% if selected_attack == 'deauth' %}
+                <td>{{ log.0}}</td>
+                <td>{{ log.1}}</td>
+                <td>{{ log.2}}</td>
+                <td>{{ log.3}}</td>
+                <td>{{ log.4}}</td>
+                <td>{{ log.5}}</td>
+                <td>{{ log.6}}</td>
+            {% elif selected_attack == 'rogue_ap' %}
+                <td>{{ log.0}}</td>
+                <td>{{ log.1}}</td>
+                <td>{{ log.2}}</td>
+                <td>{{ log.3}}</td>
+                <td>{{ log.4}}</td>
+                <td>{{ log.5}}</td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No logs available for the selected attack type.</p>
+{% endif %}
+{% endblock %}
