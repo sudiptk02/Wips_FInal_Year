@@ -44,45 +44,47 @@ It enhances network security by monitoring traffic, identifying threats, and tak
 ## 🚀 Installation & Setup
 
 1️⃣ Clone the repository
-git clone https://github.com/sudiptk02/Wips_FInal_Year.git
-cd Wips_FInal_Year
+- git clone https://github.com/sudiptk02/Wips_FInal_Year.git
+- cd Wips_FInal_Year
 
 2️⃣ Install dependencies
-sudo apt update
-sudo apt install snort python3
+- sudo apt update
+- sudo apt install snort python3
 ---
 
 3️⃣ Run the system
-Cd btech_project\Final_Y_Project\testing
-python3 main.py 
+- Cd btech_project\Final_Y_Project\testing
+- python3 main.py 
 ---
 
 🧪 How It Works
-👉Captures wireless packets
-👉Analyzes them using predefined rules
-👉Detects anomalies or attacks
-👉Triggers alerts or blocks malicious activity
+- 👉Captures wireless packets
+- 👉Analyzes them using predefined rules
+- 👉Detects anomalies or attacks
+- 👉Triggers alerts or blocks malicious activity
 ---
 
 
 
 📊 Results
-👉Successfully detects unauthorized access points
-👉Identifies deauthentication and spoofing attacks
-👉Logs suspicious activities for analysis
+- 👉Successfully detects unauthorized access points
+- 👉Identifies deauthentication and spoofing attacks
+- 👉Logs suspicious activities for analysis
 ---
 
 
 🔐 Future Enhancements
-👉AI-based threat detection
-👉Dashboard for visualization
-👉Cloud-based monitoring
-👉Mobile alerts integration
+- 👉AI-based threat detection
+- 👉Dashboard for visualization
+- 👉Cloud-based monitoring
+- 👉Mobile alerts integration
 
 
 👨‍💻 Author
-Sudipt Kumar
-B.Tech Computer Science Engineering - Cyber Security
+- Sudipt Kumar
+- B.Tech Computer Science Engineering - Cyber Security
+
+
 📜 License
-This project is for academic purposes.
+- This project is for academic purposes.
 ```bash
