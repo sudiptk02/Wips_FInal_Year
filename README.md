@@ -5,6 +5,7 @@ The Wireless Intrusion Prevention System (WIPS) is a cybersecurity solution desi
 ---
 
 ###🎯 Objectives
+
 👉Detect unauthorized wireless devices (rogue access points)
 👉Monitor network traffic for malicious activity
 👉Prevent common WiFi attacks (deauthentication, spoofing, etc.)
@@ -12,6 +13,7 @@ The Wireless Intrusion Prevention System (WIPS) is a cybersecurity solution desi
 ---
 
 ###🛠️ Technologies Used
+
 👉Rashberry Pie
 👉Python
 👉Snort (IDS/IPS)
@@ -21,6 +23,7 @@ The Wireless Intrusion Prevention System (WIPS) is a cybersecurity solution desi
 
 
 ###⚙️ Features
+
 📡 Real-time wireless traffic monitoring
 🚨 Intrusion detection and alert system
 🔒 Automatic prevention mechanisms
@@ -30,6 +33,7 @@ The Wireless Intrusion Prevention System (WIPS) is a cybersecurity solution desi
 
 
 ###🏗️ System Architecture
+
 👉Packet capture from wireless network
 👉Traffic analysis using IDS/IPS (Snort)
 👉Threat detection based on rules/signatures
@@ -38,36 +42,41 @@ The Wireless Intrusion Prevention System (WIPS) is a cybersecurity solution desi
 
 
 ###🚀 Installation & Setup
+
 1️⃣ Clone the repository
 git clone https://github.com/sudiptk02/Wips_FInal_Year.git
 ---
 
-###2️⃣ Install dependencies
+2️⃣ Install dependencies
 sudo apt update
 sudo apt install snort python3
 ---
 
-###3️⃣ Run the system
+3️⃣ Run the system
 Cd btech_project\Final_Y_Project\testing
 python3 main.py 
 ---
 
 ###🧪 How It Works
+
 👉Captures wireless packets
 👉Analyzes them using predefined rules
 👉Detects anomalies or attacks
 👉Triggers alerts or blocks malicious activity
 ---
 
-###🧪 How It Works
-📊 Results
+
+
+###📊 Results
+
 👉Successfully detects unauthorized access points
 👉Identifies deauthentication and spoofing attacks
 👉Logs suspicious activities for analysis
 ---
 
-###🧪 How It Works
-🔐 Future Enhancements
+
+###🔐 Future Enhancements
+
 👉AI-based threat detection
 👉Dashboard for visualization
 👉Cloud-based monitoring
