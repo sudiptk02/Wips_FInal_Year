@@ -12,8 +12,7 @@ The Wireless Intrusion Prevention System (WIPS) is a cybersecurity solution desi
 👉Strengthen overall wireless network security
 ---
 
-###🛠️ Technologies Used
-
+🛠️ Technologies Used
 👉Rashberry Pie
 👉Python
 👉Snort (IDS/IPS)
@@ -22,8 +21,7 @@ The Wireless Intrusion Prevention System (WIPS) is a cybersecurity solution desi
 ---
 
 
-###⚙️ Features
-
+⚙️ Features
 📡 Real-time wireless traffic monitoring
 🚨 Intrusion detection and alert system
 🔒 Automatic prevention mechanisms
@@ -32,8 +30,7 @@ The Wireless Intrusion Prevention System (WIPS) is a cybersecurity solution desi
 ---
 
 
-###🏗️ System Architecture
-
+🏗️ System Architecture
 👉Packet capture from wireless network
 👉Traffic analysis using IDS/IPS (Snort)
 👉Threat detection based on rules/signatures
@@ -41,8 +38,7 @@ The Wireless Intrusion Prevention System (WIPS) is a cybersecurity solution desi
 ---
 
 
-###🚀 Installation & Setup
-
+🚀 Installation & Setup
 1️⃣ Clone the repository
 git clone https://github.com/sudiptk02/Wips_FInal_Year.git
 ---
@@ -57,8 +53,7 @@ Cd btech_project\Final_Y_Project\testing
 python3 main.py 
 ---
 
-###🧪 How It Works
-
+🧪 How It Works
 👉Captures wireless packets
 👉Analyzes them using predefined rules
 👉Detects anomalies or attacks
@@ -67,16 +62,14 @@ python3 main.py
 
 
 
-###📊 Results
-
+📊 Results
 👉Successfully detects unauthorized access points
 👉Identifies deauthentication and spoofing attacks
 👉Logs suspicious activities for analysis
 ---
 
 
-###🔐 Future Enhancements
-
+🔐 Future Enhancements
 👉AI-based threat detection
 👉Dashboard for visualization
 👉Cloud-based monitoring
