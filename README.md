@@ -35,8 +35,7 @@ The Wireless Intrusion Prevention System (WIPS) is a cybersecurity solution desi
 
 🚀 Installation & Setup
 1️⃣ Clone the repository
-git clone https://github.com/your-username/WIPS.git
-cd btech_project\Final_Y_Project\testing
+git clone https://github.com/sudiptk02/Wips_FInal_Year.git
 
 2️⃣ Install dependencies
 sudo apt update
